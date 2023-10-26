@@ -21,3 +21,17 @@ function getRandomColor() {
   }
   return color;
 }
+
+  function downloadGradient() {
+    var gradientBox = document.getElementById('gradient-box');
+
+    // Use html2canvas to capture the gradient as an image
+    html2canvas(gradientBox).then(function(canvas) {
+        // Convert the canvas to a data URL and create a download link
+        var imgData = canvas.toDataURL('image/png');
+        var link = document.createElement('a');
+        link.href = imgData;
+        link.download = 'gradient.png';
+        link.click();
+    });
+}
