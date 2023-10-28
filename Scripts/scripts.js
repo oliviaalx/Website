@@ -53,10 +53,10 @@ function getRandomColor() {
     playButton.addEventListener("click", function () {
         if (audio.paused) {
             audio.play();
-            playButton.innerHTML = '<i class="ph-bold ph-pause"></i>';
+            playButton.innerHTML = '<i class="fa fa-pause" style="font-size:14px"></i>';
         } else {
             audio.pause();
-            playButton.innerHTML = '<i class="ph-bold ph-play"></i>';
+            playButton.innerHTML = '<i class="fa fa-play" style="font-size:14px"></i>';
         }
     });
 
@@ -76,3 +76,7 @@ function getRandomColor() {
         audio.play();
     });
 });
+
+function toggleMobileMenu(menu){
+    menu.classList.toggle('open');
+}
