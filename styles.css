@@ -28,7 +28,7 @@ p{
 .generatorbox{
     width: 600px;
     height: 400px;
-    max-width: calc(100% - 40px); /* 20px margin on both right and left sides */
+    max-width: calc(95% - 20px); /* 20px margin on both right and left sides */
     max-height: 400px; /* Limit the maximum height to 400px */
     margin: 0 auto; /* Center the box horizontally */
     background-color: white;
@@ -38,7 +38,7 @@ p{
     padding-bottom: 30px;
 }
    
-#gradient-box{   
+#gradient-box{
     width:500px;
     height:300px;
     max-width:100%;
