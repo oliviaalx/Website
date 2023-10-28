@@ -14,7 +14,7 @@ h2{
     font-weight: normal;
     color: rgb(94, 94, 94);;
     margin-top: 50px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 p{
     text-align: center;
@@ -26,15 +26,18 @@ p{
 
 /* gradient generator */
 .generatorbox{
-background-color: white;
-width: 535px;
-height: 435px;
-max-width:100%;
-margin: auto;
-
-
+    width: 600px;
+    height: 400px;
+    max-width: calc(100% - 40px); /* 20px margin on both right and left sides */
+    max-height: 400px; /* Limit the maximum height to 400px */
+    margin: 0 auto; /* Center the box horizontally */
+    background-color: white;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
 }
-
+   
 #gradient-box{   
     width:500px;
     height:300px;
@@ -192,6 +195,7 @@ ul li a:hover {
     text-align: center;
 
 }
+
 
 @media only screen and (max-width: 600px){
     header nav{
